@@ -25,22 +25,22 @@ doctors
 | specialty   | varchar(25)  |
 +-------------+--------------+ 
 admissions
-+-------------+----------------------+
++---------------------+--------------+
 | Column Name         | Type         |
-+-------------+----------------------+
++---------------------+--------------+
 | patient_id          | int          |
 | admission_date      | date         |
 | discharge_date      | char(2)      |
 | diagnosis           | varchar(80)  |
 | attending_doctor_id | decimal(3,0) |
-+-------------+----------------------+
++---------------------+--------------+
 province_names
-+-------------+----------------+
++---------------+--------------+
 | Column Name   | Type         |
-+-------------+----------------+
++---------------+--------------+
 | province_id   | char(2)      |
 | province_name | varchar(30)  |
-+-------------+----------------+
++---------------+--------------+
 
 Show first name, last name, and gender of patients whose gender is 'M'
 -> SELECT first_name, last_name, gender FROM patients where gender='M';
